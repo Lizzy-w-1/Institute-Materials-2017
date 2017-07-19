@@ -1,4 +1,11 @@
 p{
-    color: red;
+    color: blue;
     font-weight: bold;
+}
+h1{
+    font-size: 50px;
+    color: red;
+}
+body{
+    background-color: brown;
 }
