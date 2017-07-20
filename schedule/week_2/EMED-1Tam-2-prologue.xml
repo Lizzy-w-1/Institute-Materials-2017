@@ -1,0 +1,747 @@
+<?xml-model href="http://morphadorner.northwestern.edu/morphadorner/schemata/ma_tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="emed.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tamburlaine the Great, 1</title>
+                <author>Christopher Marlowe</author>
+                <editor xml:id="MJB">Meaghan Brown</editor>
+                <editor xml:id="MSP">Michael Poston</editor>
+                <editor xml:id="ERW">Elizabeth Williamson</editor>
+                <funder>National Endowment for the Humanities</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="2.1">Text released as a Featured Play of A Digital Anthology of Early Modern English Drama  (EMED). This documentary
+                    edition has been edited to ensure accuracy in original transcription and regularized
+                    spelling, with enriched and standardised encoding. This builds on work done by EEBO-TCP
+                    and Shakespeare His Contemporaries Project (see source description).</edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Folger Shakespeare Library</publisher>
+                <address>
+                    <addrLine>201 East Capitol Street, SE</addrLine>
+                    <addrLine>Washington, DC 20003</addrLine>
+                    <addrLine>http://www.earlymodernenglishdrama.folger.edu</addrLine>
+                    <addrLine>emed@folger.edu</addrLine>
+                </address>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Distributed under a
+                        Creative Commons Attribution-ShareAlike 4.0 International License.</licence>
+                </availability>
+                <date>May, 2017</date>
+                <idno type="EMED">1Tam</idno>
+            </publicationStmt>
+            <seriesStmt>
+                <title>A Digital Anthology of Early Modern English Drama (EMED): Featured Plays</title>
+            </seriesStmt>
+            <sourceDesc>
+                <biblFull n="SHC source">
+                    <titleStmt>
+                        <title>1 Tamburlaine<date type="creation_date">1587</date></title>
+                        <author>Marlowe, Christopher</author>
+                    </titleStmt>
+                    <editionStmt>
+                        <edition n="0.5">This text is one of some 500 EEBO-TCP transcriptions of Early Modern
+                            plays that have undergone several routines to create an interoperable and
+                            algorithmically amenable corpus of Early Modern Drama. Many incompletely or
+                            incorrectly transcribed words, as well as obvious printers' errors have been
+                            corrected, but the text has not been proofread word by word. See the editorial
+                            declaration further down in the header for more details about this edition.</edition>
+                        <editor>Martin Mueller</editor>
+                        <respStmt>
+                            <resp>Incompletely or incorrectly transcribed words were reviewed and in many cases
+                                fixed by</resp>
+                            <name>Nayoon Ahn</name>
+                        </respStmt>
+                    </editionStmt>
+                    <publicationStmt>
+                        <authority>
+                            <name>Martin Mueller</name>
+                            <address>
+                                <addrLine>Department of English</addrLine>
+                                <addrLine>Northwestern University</addrLine>
+                                <addrLine>Evanston IL 60208</addrLine>
+                            </address></authority>
+                        <availability>
+                            <licence target="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Distributed
+                                under a Creative Commons Attribution-NonCommercial 3.0 Unported License</licence>
+                        </availability>
+                        <date>2015</date>
+                        <idno type="SHC">SHC-158-A07004_01.xml</idno>
+                    </publicationStmt>
+                    <sourceDesc>
+                        <biblFull n="TCP source">
+                            <titleStmt>
+                                <title type="_245">Tamburlaine the Great. Who, from a Scythian shephearde, by his
+                                    rare and woonderfull conquests, became a most puissant and mightye monarque. And
+                                    (for his tyranny, and terrour in warre) was tearmed, the scourge of God. Deuided
+                                    into two tragicall discourses, as they were sundrie times shewed vpon stages in
+                                    the citie of London. By the right honorable the Lord Admyrall, his
+                                    seruauntes.</title>
+                                <author>Marlowe, Christopher, 1564-1593.</author>
+                            </titleStmt>
+                            <extent>78 600dpi TIFF G4 page images</extent>
+                            <publicationStmt>
+                                <publisher>University of Michigan, Digital Library Production Service</publisher>
+                                <pubPlace>Ann Arbor, Michigan</pubPlace>
+                                <date>2003 January (TCP phase 1)</date>
+                                <idno type="marc">99857253</idno>
+                                <idno type="stc">STC (2nd ed.) 17425.</idno>
+                                <idno type="stc">Greg, I, 94,95(a).</idno>
+                                <idno type="vid">22946</idno>
+                                <idno type="DLPS">A07004</idno>
+                                <availability>
+                                    <p>This keyboarded and encoded edition of the work described above is co-owned by
+                                        the institutions providing financial support to the Early English Books Online
+                                        Text Creation Partnership. Searching, reading, printing, or downloading EEBO-TCP
+                                        texts is reserved for the authorized users of these project partner
+                                        institutions. Permission must be granted for subsequent distribution, in print
+                                        or electronically, of this text, in whole or in part. Please contact project
+                                        staff at eebotcp-info@umich.edu for further information or permissions.</p>
+                                </availability>
+                            </publicationStmt>
+                        </biblFull>
+                        <biblFull n="printed source">
+                            <titleStmt>
+                                <title type="_245">Tamburlaine the Great. Who, from a Scythian shephearde, by his
+                                    rare and woonderfull conquests, became a most puissant and mightye monarque. And
+                                    (for his tyranny, and terrour in warre) was tearmed, the scourge of God. Deuided
+                                    into two tragicall discourses, as they were sundrie times shewed vpon stages in
+                                    the citie of London. By the right honorable the Lord Admyrall, his
+                                    seruauntes.</title>
+                                <author>Marlowe, Christopher, 1564-1593.</author>
+                            </titleStmt>
+                            <editionStmt>
+                                <edition>Now first, and newlie published.</edition>
+                            </editionStmt>
+                            <extent>[164] p. : ill. (woodcut)</extent>
+                            <publicationStmt>
+                                <publisher>Printed by Richard Ihones: at the signe of the Rose and Crowne neere
+                                    Holborne Bridge,</publisher>
+                                <pubPlace>London :</pubPlace>
+                                <date>1590.</date>
+                            </publicationStmt>
+                            <notesStmt>
+                                <note>
+                                    <p>Anonymous. By Christopher Marlowe.</p>
+                                </note>
+                                <note>
+                                    <p>Contains both parts.</p>
+                                </note>
+                                <note>
+                                    <p>Signatures: A-K L2.</p>
+                                </note>
+                                <note>
+                                    <p>Reproduction of the original in the Henry E. Huntington Library and Art
+                                        Gallery.</p>
+                                </note>
+                                <note>
+                                    <p>Cropped.</p>
+                                </note>
+                            </notesStmt>
+                        </biblFull>
+                    </sourceDesc>
+                </biblFull>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>A Digital Anthology of Early Modern English Drama (EMED) aims to make available XML files for
+                    the plays within our corpus limits, i.e. plays performed by professional companies in London between 1576 and 1642, for which there is an extant witness printed before 1660.
+                    The project is producing a subset of 'Featured Play' texts which offer reliable
+                    documentary editions available for reading and download.</p>
+            </projectDesc>
+            <listPrefixDef>
+                <prefixDef ident="SHC" matchPattern="(.+)" replacementPattern="SHC-A07004_1.xml/$1">
+                    <p>From the Shakespeare His Contemporaries encoding</p>
+                </prefixDef>
+            </listPrefixDef>
+            <editorialDecl>
+                <p>The Early Modern English Drama (EMED) text is derived from a Shakespeare His Contemporaries-encoded, Early English Books Text Creation Partnership transcription of a single printed witness. It has undergone further proofing against the imaged copy available through Early English Books Online, the microfilm images, or, in some cases, against the printed copy itself. The goal has been to provide a reliable, flexible, and transparent documentary edition of this early printed witness.</p>
+                <correction><p>Some minor typographical variations, such as turned letters, are tacitly standardized. Significant typographical variations such as those caused by missorted type, although likely unintentional, are retained in the transcription in the <gi>orig</gi> reading. If judged to be typographic error, we normalize the spelling in the <gi>reg</gi> reading and indicate the intervention in textual notes.</p>
+                    <p>Corrections are made to the text as provided by SHC in new <gi>orig</gi> and <gi>reg</gi> readings, with <att>resp</att> = EMED. We document previous readings given by both the TCP and SHC, indicated by <att>resp</att> for <gi>orig</gi> and <gi>reg</gi> readings, all presented in a <gi>choice</gi>. We have not systematically corrected the analytical attributes <att>ana</att> and <att>lemma</att> added to words with Morphadorner but we have retained them.</p> </correction>
+                <normalization><p>A few typographical and orthographic features have been tacitly standardized. All instances of long 's' have been mapped to the modern form. The q-et abbreviation has been rendered as q[ue]. The single character form of "Ye" for "the" has been rendered as two characters, with the 'e' in superscript. Where possible, accents have been retained regardless of modern usage. Superscript letters are retained in the <gi>orig</gi> reading and expanded or lowered as necessary in the <gi>reg</gi> reading.</p>
+                </normalization>
+                <hyphenation>
+                    <p>Hyphenation has been represented as originally printed. End-of-line hyphenation has been transcribed by EMED with a <gi>metamark</gi> in the <gi>orig</gi> reading, and the split word has been represented by two <gi>w</gi> tags. Often, the word fragments are rejoined in the first <gi>w</gi> tag in the pair as the <gi>reg</gi> reading, so the position of the regularized word is on the line where the word begins. When this would affect lineation (e.g., when the second word fragment is the only element on its line), the word is regularized in the second word fragment, on the next line.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Acts, scenes, and other major textual units such as title pages, epilogues, prefaces, and other paratexts are enclosed in <gi>div</gi> tags.</p>
+                    <p>Page breaks in the print witness are included in <gi>pb</gi> tags. Columns are indicated with <gi>cb</gi> tags. Line breaks are marked with <gi>lb</gi> tags. Two <gi>lb</gi> tags in succession indicate a blank line in the printed text. Three <gi>lb</gi> tags in succession indicate a space of greater than a line of type. No attempt has been made to further quantify blank space.</p>        
+                    <p>Words, spaces, and punctuation marks are enclosed in <gi>w</gi>, <gi>c</gi>, and <gi>pc</gi> tags respectively.</p>
+                    <p>Speeches are enclosed in <gi>sp</gi> tags. Speech tags usually contain a speech prefix (in the <gi>speaker</gi> tag), and an anonymous block (<gi>ab</gi>) containing the text of the speech.</p>
+                    <p>Stage directions are enclosed within <gi>stage</gi> tags. They may occur within or between speeches, or occasionally in marginal notes.</p>
+                    <p>Poems, songs, and letters within plays are enclosed in <gi>seg</gi> tags, with a <att>type</att>. Segments split between speeches are linked through <att>next</att> and <att>prev</att> attributes. Some songs are prefaced with a header like "The Song", which is enclosed in a <gi>label</gi> tag.</p>
+                    <p>Verse lines are not segmented within <gi>l</gi> or <gi>line</gi> elements. They are noted through line breaks and <gi>milestone</gi> elements. All typographic lines, including line breaks within prose, are also preserved.</p>
+                </segmentation>
+                <interpretation> 
+                    <p>Lineation is complicated by accidental features of publication. EMED documentary editions mark the line breaks as they appear in the print witness, but it is understood that other projects may wish to format the text differently. Therefore, the text itself is not enclosed in any kind of line tag. Instead, the elements of a typographic line are combined using a <gi>milestone</gi> tag. Using <gi>milestone</gi> tags allows us to maintain the lines as they are in print witness while providing flexibility. Not insignificantly, this also helps to avoid overlapping hierarchies in the XML.</p>
+                    <p>The <att>ana</att> attribute of the <gi>milestone</gi> tags designate the line as <val>verse</val> or <val>prose</val>, however these are inherited from the TCP and we do not guarantee their accuracy. Verse lines may use <att>prev</att> and <att>next</att> attributes to point to other typographic lines that complete the metrical line.</p>
+                    <p>The <att>unit</att> attribute of the <gi>milestone</gi> tags can include values of <val>wln</val> for witness line number, <val>turnunder</val> and <val>turnover</val>. Turnunders and turnovers continue the previous line in the space above or below it, and therefore inherit the line number of the line they complete. Turnunders, turnovers, and indented short lines that continue the previous metrical line are sometimes printed with a preceding bracket: these are transcribed by EMED as a <gi>metamark</gi>.</p>
+                    <p>When specifying <att>who</att> attributes, we adopt aspects of the Folger Digital Text's character referencing system to deal with the known and the ambiguous. Who attributes for clearly identified speakers are composed of their mixed case name followed by the playcode. Thus, Barabas is Barabas_JoM, Tamburlaine is Tamburlaine_1Tam in Tamburlaine Part One and Tamburlaine_2Tam in Part Two, and the Citizen's wife in London Prodigal is CitizensWife_LonPro. Characters who do not have names may be identified in relation to a group of characters, expressed in capital letters. There is an attempt to develop a controlled vocabulary, so Mariners are SAILORS, Keepers are JAILERS, and Captains may be SOLDIERS. ATTENDANTS is a catch-all category that can include Lords, Gentlemen, Torchbearers, Servants, and others. If the attendant is identified as female, the catch-all term is MAIDS. A decimal-based system allows the addition of more information. Zabina's maid Ebea is MAIDS.ZABINA.Ebea_1Tam. Another maid in her retinue could be designated MAIDS.ZABINA.1_1Tam. These still refer to individual characters. For an unnamed character who is nonetheless a single, trackable individual we can use a group term followed by .1, .2 and so on. If it is not clear whether this is the same individual as someone who has appeared previously, we would use the group name followed by .X. With messengers, for example, when we are not sure if the messenger in one scene is the same as the messenger in another, we use .X as a kind of algebraic variable. MESSENGERS.1 cannot be MESSENGERS.2, but MESSENGERS.X might be.</p>          
+                    <p>When it is impossible to track an individual's entrances and exits, or when it is difficult to know how many characters are in the group, we prefer to track the group rather than individuals. When there is this uncertainty about who in the group is speaking, the .0 modifier is used to single out actions by a subset of the group (one or more individuals). If a single unknown person within the group speaks, that person can be identified with an extra decimal number, e.g. ATTENDANTS.0.1. For example, if a group of ATTENDANTS enters, and one speaks, that one is identified as ATTENDANTS.0.1. If a second, different person speaks that person is ATTENDANTS.0.2. A third speech which may be any of the ATTENDANTS reverts to the wider ATTENDANTS.0 designator.
+                    </p>
+                </interpretation>    
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="pb">Marks the beginning of a page in the print edition. The <att>n</att> attribute gives the signature of the page in the formula signature-number-recto/verso, e.g. B2v is the verso of the second leaf in gathering B. The <att>facs</att> attribute gives the image location of the transcribed page. Image 4-a is the left (or verso) of opening 4 as imaged by EEBO.</tagUsage>
+                    <tagUsage gi="milestone">When the <att>unit</att> = "wln", it describes a line of spoken text. The <att>corresp</att> element notes the corresponding <gi>w</gi>, <gi>c</gi>, and <gi>pc</gi> elements. The <att>n</att> attribute gives the line number. The <att>ana</att> attribute has the value <val>verse</val> or <val>prose</val> but these have not been verified. The <gi>prev</gi> and <gi>next</gi> attributes provide the means for reconstructing split lines. The attribute <att>unit</att> = <val>turnunder</val> or <val>turnover</val> for fragments of primarily verse lines that are split only because they could not fit on the previous line in the print witness.</tagUsage>
+                    <tagUsage gi="fw">Describes the formework of the printed text: the signatures, running heads, page numbers, and catchwords. The <att>type</att> attribute has the value <val>runningHeader</val>, <val>pagNum</val>, <val>catch</val>, or <val>sig</val>.</tagUsage>
+                    <tagUsage gi="cb">Marks a column break in the print witness.</tagUsage> 
+                    <tagUsage gi="lb">Marks a line break in the print witness.</tagUsage> 
+                    <tagUsage gi="div">Marks acts, scenes, and other major textual units such as title pages, epilogues, prefaces, and other paratexts, as specified in the <att>type</att> attribute.</tagUsage>
+                    <tagUsage gi="head">Provides the act/scene header, or title of a paratextual element, as given in the print witness.</tagUsage>
+                    <tagUsage gi="stage">Marks stage directions, with <att>type</att> attribute, as follows:
+                        <list>
+                            <item><val>entrance</val>: marks character entrances</item>
+                            <item><val>exit</val>: marks character exits.</item>
+                            <item><val>delivery</val>: marks directions on how a character speaks (asides, speaking to a specific character, reading, singing, disguising a voice)</item>
+                            <item><val>location</val>: marks where the character speaks ("within", "above")</item>
+                            <item><val>modifier</val>: usually marks a character in disguise (e.g., "as Balthazar")</item>
+                            <item><val>business</val>: any other action, whether performed by a character or not. Directions such as "flourish" and "thunder and lightning" are considered to be "business", since someone will have to make them happen</item>
+                            <item><val>dumbshow</val>: describes the action of a dumbshow</item>
+                            <item><val>mixed</val>: a stage direction that combines several of the above</item>
+                        </list></tagUsage>
+                    <tagUsage gi="sp">Marks a speech within the text. The <att>who</att> attribute identifies the characters associated with that speech.</tagUsage>
+                    <tagUsage gi="speaker">Provides the speech prefix, as given in the print witness.</tagUsage>
+                    <tagUsage gi="ab">Within <gi>sp</gi> tags, contains the text of the speech.</tagUsage>
+                    <tagUsage gi="w">Marks a word in a speech, stage direction, speech prefix, or header.</tagUsage>
+                    <tagUsage gi="c">Marks a space character in a speech, stage direction, speech prefix, or header.</tagUsage>
+                    <tagUsage gi="pc">Marks a punctuation character in a speech, stage direction, speech prefix, or header. </tagUsage>
+                    <tagUsage gi="gap">Marks editorial placeholders where words are missing or unclear in the source text.</tagUsage>
+                    <tagUsage gi="note">Links a note to one or more <gi>w</gi>, <gi>c</gi>, or <gi>pc</gi> elements.</tagUsage>
+                    <tagUsage gi="seg">Often contains a song, poem, or letter within plays, identified by its <att>type</att> attribute; or, if inside a <gi>w</gi> tag, identifies a word segment that may be quoted or emended.</tagUsage>
+                    <tagUsage gi="label">Marks the header to a song, letter, or dumbshow.</tagUsage>
+                    <tagUsage gi="foreign">Marks non-English words that are also highlighted typographically. The <att>xml:lang</att> attribute identifies the foreign language, where appropriate.</tagUsage>
+                    <tagUsage gi="name">Marks a name, broadly defined to include emphasized nouns, that is also highlighted typographically.</tagUsage>
+                    <tagUsage gi="hi">Marks sections of text that are otherwise highlighted typographically.</tagUsage>  
+                </namespace>
+            </tagsDecl>
+            <refsDecl>
+                <p>Words, spaces, and punctuation characters are numbered sequentially, incremented by 10.</p>
+                <p>Most other elements begin with an element-specific prefix, followed by a reference to the Witness Line Number, a sequential numbering of the numbered lines in the text. All printed lines are numbered, including stage directions and headers as well as spoken text.</p>
+            </refsDecl>
+            
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="lcsh">
+                    <term>Guise, Henri, -- duc de, -- 1550-1588 -- Drama.</term>
+                </keywords>
+            </textClass>
+            <particDesc>
+                <personGrp xml:id="BASSOES_1Tam"/>
+                <person xml:id="BASSOES.0.1_1Tam"/>
+                <person xml:id="BASSOES.0.2_1Tam"/>
+                <person xml:id="MAIDS.ZABINA.ebea_1Tam"/>
+                <person xml:id="MESSENGERS.1_1Tam"/>
+                <person xml:id="MESSENGERS.2_1Tam"/>
+                <personGrp xml:id="OTHERS_1Tam"/>
+                <person xml:id="SOLDIERS.1_1Tam"/>
+                <personGrp xml:id="VIRGINS_1Tam"/>
+                <person xml:id="VIRGINS.1_1Tam"/>
+                <person xml:id="VIRGINS.2_1Tam"/>
+                <person xml:id="Agydas_1Tam"/>
+                <person xml:id="Anippe_1Tam"/>
+                <person xml:id="Bajazeth_1Tam"/>
+                <person xml:id="Capolin_1Tam"/>
+                <person xml:id="Ceneus_1Tam"/>
+                <person xml:id="Cosroe_1Tam"/>
+                <person xml:id="GovernorDamascus_1Tam"/>
+                <person xml:id="KingArabia_1Tam"/>
+                <person xml:id="KingArgier_1Tam"/>
+                <person xml:id="KingFez_1Tam"/>
+                <person xml:id="KingMorocco_1Tam"/>
+                <person xml:id="Magnetes_1Tam"/>
+                <person xml:id="Meander_1Tam"/>
+                <person xml:id="Menaphon_1Tam"/>
+                <person xml:id="Mycetes_1Tam"/>
+                <person xml:id="Ortygius_1Tam"/>
+                <person xml:id="Philemus_1Tam"/>
+                <person xml:id="Soldan_1Tam"/>
+                <person xml:id="Spy_1Tam"/>
+                <person xml:id="Tamburlaine_1Tam"/>
+                <person xml:id="Techelles_1Tam"/>
+                <person xml:id="Theridamas_1Tam"/>
+                <person xml:id="Usumcasane_1Tam"/>
+                <person xml:id="Zabina_1Tam"/>
+                <person xml:id="Zenocrate_1Tam"/>
+            </particDesc>
+            
+        </profileDesc>
+    </teiHeader>
+    <text xml:id="A07004_01-e100010">
+<body><div type="prologue" xml:id="A07004_01-e100060" rend="italic">
+<lb/>
+<lb n="4"/>
+<head rend="roman">
+<w xml:id="w0007560" facs="3-a-0150" corresp="SHC#A07004_01-000200" ana="#d" lemma="the">
+<choice>
+  <orig resp="#TCP #SHC #EMED">The</orig>
+  <reg resp="#SHC #EMED">The</reg>
+</choice>
+</w>
+<c xml:id="c0007570" facs="3-b"> </c>
+<w xml:id="w0007580" facs="3-a-0160" corresp="SHC#A07004_01-000210" ana="#n1" lemma="prologue">
+<choice>
+  <orig resp="#TCP #SHC #EMED">Prologue</orig>
+  <reg resp="#SHC #EMED">Prologue</reg>
+</choice>
+</w>
+<pc xml:id="p0007590" facs="3-a-0170" corresp="SHC#A07004_01-000220" unit="sentence">.</pc>
+</head>
+<lb/>
+<lb n="5"/>
+<ab>
+<milestone xml:id="wln-0005" unit="wln" ana="#verse" corresp="#w0007600 #c0007610 #w0007620 #c0007630 #w0007640 #c0007650 #w0007660 #c0007670 #w0007680 #c0007690 #w0007700 #c0007710 #w0007720 #p0007730"/>
+<w xml:id="w0007600" facs="3-a-0180" corresp="SHC#A07004_01-000240" ana="#acp-p" lemma="from">
+<choice>
+  <orig resp="#TCP #SHC #EMED">FRom</orig>
+  <reg resp="#SHC #EMED">FRom</reg>
+</choice>
+</w>
+<c xml:id="c0007610" facs="3-b"> </c>
+<w xml:id="w0007620" facs="3-a-0190" corresp="SHC#A07004_01-000250" ana="#j_vg" lemma="jig">
+<choice>
+  <orig resp="#TCP #SHC #EMED">iygging</orig>
+  <reg resp="#SHC #EMED">jigging</reg>
+</choice>
+</w>
+<c xml:id="c0007630" facs="3-b"> </c>
+<w xml:id="w0007640" facs="3-a-0200" corresp="SHC#A07004_01-000260" ana="#n2" lemma="vein">
+<choice>
+  <orig resp="#TCP #SHC #EMED">vaines</orig>
+  <reg resp="#SHC #EMED">veins</reg>
+</choice>
+</w>
+<c xml:id="c0007650" facs="3-b"> </c>
+<w xml:id="w0007660" facs="3-a-0210" corresp="SHC#A07004_01-000270" ana="#acp-p" lemma="of">
+<choice>
+  <orig resp="#TCP #SHC #EMED">of</orig>
+  <reg resp="#SHC #EMED">of</reg>
+</choice>
+</w>
+<c xml:id="c0007670" facs="3-b"> </c>
+<w xml:id="w0007680" facs="3-a-0220" corresp="SHC#A07004_01-000280" ana="#j_vg" lemma="rhyme">
+<choice>
+  <orig resp="#TCP #SHC #EMED">riming</orig>
+  <reg resp="#SHC #EMED">rhyming</reg>
+</choice>
+</w>
+<c xml:id="c0007690" facs="3-b"> </c>
+<w xml:id="w0007700" facs="3-a-0230" corresp="SHC#A07004_01-000290" ana="#n1" lemma="mother">
+<choice>
+  <orig resp="#TCP #SHC #EMED">mother</orig>
+  <reg resp="#SHC #EMED">mother</reg>
+</choice>
+</w>
+<c xml:id="c0007710" facs="3-b"> </c>
+<w xml:id="w0007720" facs="3-a-0240" corresp="SHC#A07004_01-000300" ana="#n2" lemma="wit">
+<choice>
+  <orig resp="#TCP #SHC #EMED">wits</orig>
+  <reg resp="#SHC #EMED">wits</reg>
+</choice>
+</w>
+<pc xml:id="p0007730" facs="3-a-0250" corresp="SHC#A07004_01-000310">,</pc>
+<lb n="6"/>
+<milestone xml:id="wln-0006" unit="wln" ana="#verse" corresp="#w0007740 #c0007750 #w0007760 #c0007770 #w0007780 #c0007790 #w0007800 #c0007810 #w0007820 #c0007830 #w0007840 #c0007850 #w0007860 #c0007870 #w0007880 #p0007890"/>
+<w xml:id="w0007740" facs="3-a-0260" corresp="SHC#A07004_01-000320" ana="#cc" lemma="and">
+<choice>
+  <orig resp="#TCP #SHC #EMED">And</orig>
+  <reg resp="#SHC #EMED">And</reg>
+</choice>
+</w>
+<c xml:id="c0007750" facs="3-b"> </c>
+<w xml:id="w0007760" facs="3-a-0270" corresp="SHC#A07004_01-000330" ana="#d" lemma="such">
+<choice>
+  <orig resp="#TCP #SHC #EMED">such</orig>
+  <reg resp="#SHC #EMED">such</reg>
+</choice>
+</w>
+<c xml:id="c0007770" facs="3-b"> </c>
+<w xml:id="w0007780" facs="3-a-0280" corresp="SHC#A07004_01-000340" ana="#n2" lemma="conceit">
+<choice>
+  <orig resp="#TCP #SHC #EMED">conceits</orig>
+  <reg resp="#SHC #EMED">conceits</reg>
+</choice>
+</w>
+<c xml:id="c0007790" facs="3-b"> </c>
+<w xml:id="w0007800" facs="3-a-0290" corresp="SHC#A07004_01-000350" ana="#acp-cs" lemma="as">
+<choice>
+  <orig resp="#TCP #SHC #EMED">as</orig>
+  <reg resp="#SHC #EMED">as</reg>
+</choice>
+</w>
+<c xml:id="c0007810" facs="3-b"> </c>
+<w xml:id="w0007820" facs="3-a-0300" corresp="SHC#A07004_01-000360" ana="#n1" lemma="clownage">
+<choice>
+  <orig resp="#TCP #SHC #EMED">clownage</orig>
+  <reg resp="#SHC #EMED">clownage</reg>
+</choice>
+</w>
+<c xml:id="c0007830" facs="3-b"> </c>
+<w xml:id="w0007840" facs="3-a-0310" corresp="SHC#A07004_01-000370" ana="#vvz" lemma="keep">
+<choice>
+  <orig resp="#TCP #SHC #EMED">keepes</orig>
+  <reg resp="#SHC #EMED">keeps</reg>
+</choice>
+</w>
+<c xml:id="c0007850" facs="3-b"> </c>
+<w xml:id="w0007860" facs="3-a-0320" corresp="SHC#A07004_01-000380" ana="#acp-p" lemma="in">
+<choice>
+  <orig resp="#TCP #SHC #EMED">in</orig>
+  <reg resp="#SHC #EMED">in</reg>
+</choice>
+</w>
+<c xml:id="c0007870" facs="3-b"> </c>
+<w xml:id="w0007880" facs="3-a-0330" corresp="SHC#A07004_01-000390" ana="#n1" lemma="pay">
+<choice>
+  <orig resp="#TCP #SHC #EMED">pay</orig>
+  <reg resp="#SHC #EMED">pay</reg>
+</choice>
+</w>
+<pc xml:id="p0007890" facs="3-a-0340" corresp="SHC#A07004_01-000400">,</pc>
+<lb n="7"/>
+<milestone xml:id="wln-0007" unit="wln" ana="#verse" corresp="#w0007900 #c0007910 #w0007920 #c0007930 #w0007940 #c0007950 #w0007960 #c0007970 #w0007980 #c0007990 #w0008000 #c0008010 #w0008020 #c0008030 #w0008040 #c0008050 #w0008060 #p0008070"/>
+<w xml:id="w0007900" facs="3-a-0350" corresp="SHC#A07004_01-000410" ana="#pns|vmb" lemma="we|will">
+<choice>
+  <orig resp="#TCP #SHC #EMED">Weele</orig>
+  <reg resp="#EMED">We’ll</reg>
+  <reg resp="#SHC">we’ll</reg>
+</choice>
+</w>
+<c xml:id="c0007910" facs="3-b"> </c>
+<w xml:id="w0007920" facs="3-a-0360" corresp="SHC#A07004_01-000420" ana="#vvi" lemma="lead">
+<choice>
+  <orig resp="#TCP #SHC #EMED">lead</orig>
+  <reg resp="#SHC #EMED">lead</reg>
+</choice>
+</w>
+<c xml:id="c0007930" facs="3-b"> </c>
+<w xml:id="w0007940" facs="3-a-0370" corresp="SHC#A07004_01-000430" ana="#pn" lemma="you">
+<choice>
+  <orig resp="#TCP #SHC #EMED">you</orig>
+  <reg resp="#SHC #EMED">you</reg>
+</choice>
+</w>
+<c xml:id="c0007950" facs="3-b"> </c>
+<w xml:id="w0007960" facs="3-a-0380" corresp="SHC#A07004_01-000440" ana="#acp-p" lemma="to">
+<choice>
+  <orig resp="#TCP #SHC #EMED">to</orig>
+  <reg resp="#SHC #EMED">to</reg>
+</choice>
+</w>
+<c xml:id="c0007970" facs="3-b"> </c>
+<w xml:id="w0007980" facs="3-a-0390" corresp="SHC#A07004_01-000450" ana="#d" lemma="the">
+<choice>
+  <orig resp="#TCP #SHC #EMED">the</orig>
+  <reg resp="#SHC #EMED">the</reg>
+</choice>
+</w>
+<c xml:id="c0007990" facs="3-b"> </c>
+<w xml:id="w0008000" facs="3-a-0400" corresp="SHC#A07004_01-000460" ana="#j" lemma="stately">
+<choice>
+  <orig resp="#TCP #SHC #EMED">stately</orig>
+  <reg resp="#SHC #EMED">stately</reg>
+</choice>
+</w>
+<c xml:id="c0008010" facs="3-b"> </c>
+<w xml:id="w0008020" facs="3-a-0410" corresp="SHC#A07004_01-000470" ana="#n1" lemma="tent">
+<choice>
+  <orig resp="#TCP #SHC #EMED">tent</orig>
+  <reg resp="#SHC #EMED">tent</reg>
+</choice>
+</w>
+<c xml:id="c0008030" facs="3-b"> </c>
+<w xml:id="w0008040" facs="3-a-0420" corresp="SHC#A07004_01-000480" ana="#acp-p" lemma="of">
+<choice>
+  <orig resp="#TCP #SHC #EMED">of</orig>
+  <reg resp="#SHC #EMED">of</reg>
+</choice>
+</w>
+<c xml:id="c0008050" facs="3-b"> </c>
+<w xml:id="w0008060" facs="3-a-0430" corresp="SHC#A07004_01-000490" ana="#n1" lemma="war">
+<choice>
+  <orig resp="#TCP #SHC #EMED">War</orig>
+  <reg resp="#SHC #EMED">War</reg>
+</choice>
+</w>
+<pc xml:id="p0008070" facs="3-a-0440" corresp="SHC#A07004_01-000500" unit="sentence">.</pc>
+<lb n="8"/>
+<milestone xml:id="wln-0008" unit="wln" ana="#verse" corresp="#w0008080 #c0008090 #w0008100 #c0008110 #w0008120 #c0008130 #w0008140 #c0008150 #w0008160 #c0008170 #w0008180 #c0008190 #w0008200 #p0008210"/>
+<w xml:id="w0008080" facs="3-a-0450" corresp="SHC#A07004_01-000510" ana="#crq-cs" lemma="where">
+<choice>
+  <orig resp="#TCP #SHC #EMED">Where</orig>
+  <reg resp="#SHC #EMED">Where</reg>
+</choice>
+</w>
+<c xml:id="c0008090" facs="3-b"> </c>
+<w xml:id="w0008100" facs="3-a-0460" corresp="SHC#A07004_01-000520" ana="#pn" lemma="you">
+<choice>
+  <orig resp="#TCP #SHC #EMED">you</orig>
+  <reg resp="#SHC #EMED">you</reg>
+</choice>
+</w>
+<c xml:id="c0008110" facs="3-b"> </c>
+<w xml:id="w0008120" facs="3-a-0470" corresp="SHC#A07004_01-000530" ana="#vmb" lemma="shall">
+<choice>
+  <orig resp="#TCP #SHC #EMED">shall</orig>
+  <reg resp="#SHC #EMED">shall</reg>
+</choice>
+</w>
+<c xml:id="c0008130" facs="3-b"> </c>
+<w xml:id="w0008140" facs="3-a-0480" corresp="SHC#A07004_01-000540" ana="#vvi" lemma="hear">
+<choice>
+  <orig resp="#TCP #SHC #EMED">heare</orig>
+  <reg resp="#SHC #EMED">hear</reg>
+</choice>
+</w>
+<c xml:id="c0008150" facs="3-b"> </c>
+<w xml:id="w0008160" facs="3-a-0490" corresp="SHC#A07004_01-000550" ana="#d" lemma="the">
+<choice>
+  <orig resp="#TCP #SHC #EMED">the</orig>
+  <reg resp="#SHC #EMED">the</reg>
+</choice>
+</w>
+<c xml:id="c0008170" facs="3-b"> </c>
+<w xml:id="w0008180" facs="3-a-0500" corresp="SHC#A07004_01-000560" ana="#j-nn" lemma="scythian">
+<choice>
+  <orig resp="#TCP #SHC #EMED">Scythian</orig>
+  <reg resp="#SHC #EMED">Scythian</reg>
+</choice>
+</w>
+<c xml:id="c0008190" facs="3-b"> </c>
+<name xml:id="hi-0013">
+<w xml:id="w0008200" facs="3-a-0510" corresp="SHC#A07004_01-000570" ana="#n1-nn" lemma="Tamburlaine">
+<choice>
+  <orig resp="#TCP #SHC #EMED">Tamburlaine</orig>
+  <reg resp="#SHC #EMED">Tamburlaine</reg>
+</choice>
+</w>
+</name>
+<pc xml:id="p0008210" facs="3-a-0520" corresp="SHC#A07004_01-000580">:</pc>
+<lb n="9"/>
+<milestone xml:id="wln-0009" unit="wln" ana="#verse" corresp="#w0008220 #c0008230 #w0008240 #c0008250 #w0008260 #c0008270 #w0008280 #c0008290 #w0008300 #c0008310 #w0008320 #c0008330 #w0008340"/>
+<w xml:id="w0008220" facs="3-a-0530" corresp="SHC#A07004_01-000590" ana="#vvg" lemma="threaten">
+<choice>
+  <orig resp="#TCP #SHC #EMED">Threatning</orig>
+  <reg resp="#EMED">Threat’ning</reg>
+  <reg resp="#SHC">Threatening</reg>
+</choice>
+</w>
+<c xml:id="c0008230" facs="3-b"> </c>
+<w xml:id="w0008240" facs="3-a-0540" corresp="SHC#A07004_01-000600" ana="#d" lemma="the">
+<choice>
+  <orig resp="#TCP #SHC #EMED">the</orig>
+  <reg resp="#SHC #EMED">the</reg>
+</choice>
+</w>
+<c xml:id="c0008250" facs="3-b"> </c>
+<w xml:id="w0008260" facs="3-a-0550" corresp="SHC#A07004_01-000610" ana="#n1" lemma="world">
+<choice>
+  <orig resp="#TCP #SHC #EMED">world</orig>
+  <reg resp="#SHC #EMED">world</reg>
+</choice>
+</w>
+<c xml:id="c0008270" facs="3-b"> </c>
+<w xml:id="w0008280" facs="3-a-0560" corresp="SHC#A07004_01-000620" ana="#acp-p" lemma="with">
+<choice>
+  <orig resp="#TCP #SHC #EMED">with</orig>
+  <reg resp="#SHC #EMED">with</reg>
+</choice>
+</w>
+<c xml:id="c0008290" facs="3-b"> </c>
+<w xml:id="w0008300" facs="3-a-0570" corresp="SHC#A07004_01-000630" ana="#j" lemma="high">
+<choice>
+  <orig resp="#TCP #SHC #EMED">high</orig>
+  <reg resp="#SHC #EMED">high</reg>
+</choice>
+</w>
+<c xml:id="c0008310" facs="3-b"> </c>
+<w xml:id="w0008320" facs="3-a-0580" corresp="SHC#A07004_01-000640" ana="#j_vg" lemma="astound">
+<choice>
+  <orig resp="#TCP #SHC #EMED">astounding</orig>
+  <reg resp="#SHC #EMED">astounding</reg>
+</choice>
+</w>
+<c xml:id="c0008330" facs="3-b"> </c>
+<w xml:id="w0008340" facs="3-a-0590" corresp="SHC#A07004_01-000650" ana="#n2" lemma="term">
+<choice>
+  <orig resp="#TCP #SHC #EMED">tearms</orig>
+  <reg resp="#SHC #EMED">terms</reg>
+</choice>
+</w>
+<lb n="10"/>
+<milestone xml:id="wln-0010" unit="wln" ana="#verse" corresp="#w0008350 #c0008360 #w0008370 #c0008380 #w0008390 #c0008400 #w0008410 #c0008420 #w0008430 #c0008440 #w0008450 #c0008460 #w0008470"/>
+<w xml:id="w0008350" facs="3-a-0600" corresp="SHC#A07004_01-000660" ana="#cc" lemma="and">
+<choice>
+  <orig resp="#TCP #SHC #EMED">And</orig>
+  <reg resp="#SHC #EMED">And</reg>
+</choice>
+</w>
+<c xml:id="c0008360" facs="3-b"> </c>
+<w xml:id="w0008370" facs="3-a-0610" corresp="SHC#A07004_01-000670" ana="#vvg" lemma="scourge">
+<choice>
+  <orig resp="#TCP #SHC #EMED">scourging</orig>
+  <reg resp="#SHC #EMED">scourging</reg>
+</choice>
+</w>
+<c xml:id="c0008380" facs="3-b"> </c>
+<w xml:id="w0008390" facs="3-a-0620" corresp="SHC#A07004_01-000680" ana="#n2" lemma="kingdom">
+<choice>
+  <orig resp="#TCP #SHC #EMED">kingdoms</orig>
+  <reg resp="#SHC #EMED">kingdoms</reg>
+</choice>
+</w>
+<c xml:id="c0008400" facs="3-b"> </c>
+<w xml:id="w0008410" facs="3-a-0630" corresp="SHC#A07004_01-000690" ana="#acp-p" lemma="with">
+<choice>
+  <orig resp="#TCP #SHC #EMED">with</orig>
+  <reg resp="#SHC #EMED">with</reg>
+</choice>
+</w>
+<c xml:id="c0008420" facs="3-b"> </c>
+<w xml:id="w0008430" facs="3-a-0640" corresp="SHC#A07004_01-000700" ana="#po" lemma="his">
+<choice>
+  <orig resp="#TCP #SHC #EMED">his</orig>
+  <reg resp="#SHC #EMED">his</reg>
+</choice>
+</w>
+<c xml:id="c0008440" facs="3-b"> </c>
+<w xml:id="w0008450" facs="3-a-0650" corresp="SHC#A07004_01-000710" ana="#j_vg" lemma="conquer">
+<choice>
+  <orig resp="#EMED">cōquering</orig>
+  <orig resp="#SHC">conquering</orig>
+  <orig resp="#TCP">cōquering</orig>
+  <reg resp="#SHC #EMED">conquering</reg>
+</choice>
+</w>
+<c xml:id="c0008460" facs="3-b"> </c>
+<w xml:id="w0008470" facs="3-a-0660" corresp="SHC#A07004_01-000720" ana="#n1" lemma="sword">
+<choice>
+  <orig resp="#TCP #SHC #EMED">sword</orig>
+  <reg resp="#SHC #EMED">sword</reg>
+</choice>
+</w>
+<lb n="11"/>
+<milestone xml:id="wln-0011" unit="wln" ana="#verse" corresp="#w0008480 #c0008490 #w0008500 #c0008510 #w0008520 #c0008530 #w0008540 #c0008550 #w0008560 #c0008570 #w0008580 #c0008590 #w0008600 #c0008610 #w0008620 #p0008630"/>
+<w xml:id="w0008480" facs="3-a-0670" corresp="SHC#A07004_01-000730" ana="#vvb" lemma="view">
+<choice>
+  <orig resp="#TCP #SHC #EMED">View</orig>
+  <reg resp="#SHC #EMED">View</reg>
+</choice>
+</w>
+<c xml:id="c0008490" facs="3-b"> </c>
+<w xml:id="w0008500" facs="3-a-0680" corresp="SHC#A07004_01-000740" ana="#acp-av" lemma="but">
+<choice>
+  <orig resp="#TCP #SHC #EMED">but</orig>
+  <reg resp="#SHC #EMED">but</reg>
+</choice>
+</w>
+<c xml:id="c0008510" facs="3-b"> </c>
+<w xml:id="w0008520" facs="3-a-0690" corresp="SHC#A07004_01-000750" ana="#po" lemma="his">
+<choice>
+  <orig resp="#TCP #SHC #EMED">his</orig>
+  <reg resp="#SHC #EMED">his</reg>
+</choice>
+</w>
+<c xml:id="c0008530" facs="3-b"> </c>
+<w xml:id="w0008540" facs="3-a-0700" corresp="SHC#A07004_01-000760" ana="#n1" lemma="picture">
+<choice>
+  <orig resp="#TCP #SHC #EMED">picture</orig>
+  <reg resp="#SHC #EMED">picture</reg>
+</choice>
+</w>
+<c xml:id="c0008550" facs="3-b"> </c>
+<w xml:id="w0008560" facs="3-a-0710" corresp="SHC#A07004_01-000770" ana="#acp-p" lemma="in">
+<choice>
+  <orig resp="#TCP #SHC #EMED">in</orig>
+  <reg resp="#SHC #EMED">in</reg>
+</choice>
+</w>
+<c xml:id="c0008570" facs="3-b"> </c>
+<w xml:id="w0008580" facs="3-a-0720" corresp="SHC#A07004_01-000780" ana="#d" lemma="this">
+<choice>
+  <orig resp="#TCP #SHC #EMED">this</orig>
+  <reg resp="#SHC #EMED">this</reg>
+</choice>
+</w>
+<c xml:id="c0008590" facs="3-b"> </c>
+<w xml:id="w0008600" facs="3-a-0730" corresp="SHC#A07004_01-000790" ana="#j" lemma="tragic">
+<choice>
+  <orig resp="#TCP #SHC #EMED">tragicke</orig>
+  <reg resp="#SHC #EMED">tragic</reg>
+</choice>
+</w>
+<c xml:id="c0008610" facs="3-b"> </c>
+<w xml:id="w0008620" facs="3-a-0740" corresp="SHC#A07004_01-000800" ana="#n1" lemma="glass">
+<choice>
+  <orig resp="#TCP #SHC #EMED">glasse</orig>
+  <reg resp="#SHC #EMED">glass</reg>
+</choice>
+</w>
+<pc xml:id="p0008630" facs="3-a-0750" corresp="SHC#A07004_01-000810">,</pc>
+<lb n="12"/>
+<milestone xml:id="wln-0012" unit="wln" ana="#verse" corresp="#w0008640 #c0008650 #w0008660 #c0008670 #w0008680 #c0008690 #w0008700 #c0008710 #w0008720 #c0008730 #w0008740 #c0008750 #w0008760 #c0008770 #w0008780 #p0008790"/>
+<w xml:id="w0008640" facs="3-a-0760" corresp="SHC#A07004_01-000820" ana="#cc" lemma="and">
+<choice>
+  <orig resp="#TCP #SHC #EMED">And</orig>
+  <reg resp="#SHC #EMED">And</reg>
+</choice>
+</w>
+<c xml:id="c0008650" facs="3-b"> </c>
+<w xml:id="w0008660" facs="3-a-0770" corresp="SHC#A07004_01-000830" ana="#av" lemma="then">
+<choice>
+  <orig resp="#TCP #SHC #EMED">then</orig>
+  <reg resp="#SHC #EMED">then</reg>
+</choice>
+</w>
+<c xml:id="c0008670" facs="3-b"> </c>
+<w xml:id="w0008680" facs="3-a-0780" corresp="SHC#A07004_01-000840" ana="#vvb" lemma="applaud">
+<choice>
+  <orig resp="#TCP #SHC #EMED">applaud</orig>
+  <reg resp="#SHC #EMED">applaud</reg>
+</choice>
+</w>
+<c xml:id="c0008690" facs="3-b"> </c>
+<w xml:id="w0008700" facs="3-a-0790" corresp="SHC#A07004_01-000850" ana="#po" lemma="his">
+<choice>
+  <orig resp="#TCP #SHC #EMED">his</orig>
+  <reg resp="#SHC #EMED">his</reg>
+</choice>
+</w>
+<c xml:id="c0008710" facs="3-b"> </c>
+<w xml:id="w0008720" facs="3-a-0800" corresp="SHC#A07004_01-000860" ana="#n2" lemma="fortune">
+<choice>
+  <orig resp="#TCP #SHC #EMED">fortunes</orig>
+  <reg resp="#SHC #EMED">fortunes</reg>
+</choice>
+</w>
+<c xml:id="c0008730" facs="3-b"> </c>
+<w xml:id="w0008740" facs="3-a-0810" corresp="SHC#A07004_01-000870" ana="#acp-cs" lemma="as">
+<choice>
+  <orig resp="#TCP #SHC #EMED">as</orig>
+  <reg resp="#SHC #EMED">as</reg>
+</choice>
+</w>
+<c xml:id="c0008750" facs="3-b"> </c>
+<w xml:id="w0008760" facs="3-a-0820" corresp="SHC#A07004_01-000880" ana="#pn" lemma="you">
+<choice>
+  <orig resp="#TCP #SHC #EMED">you</orig>
+  <reg resp="#SHC #EMED">you</reg>
+</choice>
+</w>
+<c xml:id="c0008770" facs="3-b"> </c>
+<w xml:id="w0008780" facs="3-a-0830" corresp="SHC#A07004_01-000890" ana="#vvb" lemma="please">
+<choice>
+  <orig resp="#TCP #SHC #EMED">please</orig>
+  <reg resp="#SHC #EMED">please</reg>
+</choice>
+</w>
+<pc xml:id="p0008790" facs="3-a-0840" corresp="SHC#A07004_01-000900" unit="sentence">.</pc>
+</ab>
+</div></body>
+    </text>
+</TEI>
