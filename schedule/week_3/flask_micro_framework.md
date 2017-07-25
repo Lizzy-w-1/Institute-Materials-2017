@@ -42,7 +42,7 @@ You need to include it in your python header:
 from flask import render_template
 ```
 
-If we put a file named index.html into the `templates` direcory with the following contents:
+If we put a file named index.html into the `templates` directory with the following contents:
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -88,7 +88,7 @@ See [flask-index-template-dyn.py](flask-index-template-dyn.py) and [templates/in
 
 #### Using a Python dictionary in the template 
 Instead of passing in all single variables to the `render_template` function you can use a Python dictionary. You access the keys in the template by putting the dictionary variable name and the key together with a period, e.g. `dict.title` 
-See [flask-index-template-dyn-dict.py](flask-index-template-dyn.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
+See [flask-index-template-dyn-dict.py](flask-index-template-dyn-dict.py) and [templates/index-dyn.html](templates/index-dyn-dict.html) in the repo.
 
 ## Error handling
 When creating applications it is important to manage _forseen errors_ as well as _unforseen errors_ and _exceptions_.
@@ -169,15 +169,18 @@ If you are doing API calls you also need to make sure that you handle connection
 
 ```python
 import json
-import urllib
-import urllib2
+import urllib.error
+import urllib.parse
+import urllib.request
 
 urlbase = "http://localhost:8091/exist/rest/db/karp/karp-stats.xql?op=feat-stats&do-feat-values=true&use-current=true&json=true&resurs={}"
 
 def get_data(resource):
-    query = urllib.quote(resource)
+    query = urllib.parse.quote(resource)
     url = urlbase.format(query)
-    data = urllib2.urlopen(url).read()
+    request = urllib.request.Request(url)
+    with urllib.request.urlopen(request) as response: 
+        data = response.read().decode('utf-8')
     parsed = json.loads(data)
     info = None
     if parsed.get('resource'):
@@ -188,8 +191,8 @@ def get_data(resource):
 
 try: 
    get_data("dalin")
-except urllib2.URLError:
-   print "Connection refused. Please check the URL and port"
+except urllib.error.URLError:
+   print("Connection refused. Please check the URL and port")
 ```
 
 See [error-handling-url-not-found.py](error-handling-url-not-found.py).
@@ -197,4 +200,4 @@ See [error-handling-url-not-found.py](error-handling-url-not-found.py).
 Exercise: There are of course many other errors and exceptions you would like handle in this still rather simple script. Wich ones could you come up with? 
 
 ### Validation
-Every app running in a web browser should have validation of values from forms validated both on client and server side.
+Every app running in a web browser should have validation of values from forms validated *both on client and server* side.
