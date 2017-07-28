@@ -35,8 +35,6 @@ def get_play(play_code = ''):
 #	return ("abc")
 #   return render_template("resource.html", resource_name=resource_name, value=value)
 
-
-
 def get_request_value_with_fallback(key):
     if request.args.get(key):
         return request.args.get(key)
