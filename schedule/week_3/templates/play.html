@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+{% extends 'template.html' %}
+{% block content %}
+    {% if play_code == 'Ado' %}
+        {% include 'Ado.html' %}
+    {% endif %}
+    {% if play_code == 'missing1' %}
+        {% include 'missing1.html' ignore missing %}
+    {% endif %}
+	{% if play_code == 'Ant' %}
+        {% include 'Ant.html' %}
+    {% endif %}
+	{% if play_code == 'AWW' %}
+        {% include 'AWW.html' %}
+    {% endif %}
+	{% if play_code == 'Ham' %}
+        {% include 'Ham.html' %}
+    {% endif %}
+	{% if play_code == 'AYL' %}
+        {% include 'AYL.html' %}
+    {% endif %}
+	{% if play_code == 'Cor' %}
+        {% include 'Cor.html' %}
+    {% endif %}
+	{% if play_code == 'all' %}
+        {% include 'all.html' %}
+    {% endif %}
+{% endblock %}

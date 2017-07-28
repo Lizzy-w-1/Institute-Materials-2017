@@ -26,6 +26,17 @@ def get_local_resource(resource_name = ''):
 def get_local_resource_with_value(resource_name = '', value = ''):
     return render_template("resource.html", resource_name=resource_name, value=value)
 
+@app.route("/play/<play_code>")
+def get_play(play_code = ''):
+    return render_template("play.html", play_code=play_code)
+
+#@app.route("/play/<play_code>/character/<character>")
+#def get_play_char(play_code = '', character = ''):  #these are default values, ie empty
+#	return ("abc")
+#   return render_template("resource.html", resource_name=resource_name, value=value)
+
+
+
 def get_request_value_with_fallback(key):
     if request.args.get(key):
         return request.args.get(key)

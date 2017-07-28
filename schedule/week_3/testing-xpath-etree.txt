@@ -1,0 +1,9 @@
+from lxml import etree
+
+with open('EMED-1Tam-2-prologue.xml', encoding='utf-8') as f:
+    tam = etree.parse(f)
+
+	print(etree.tostring(tam).decode('utf-8'))
+
+for word in tam.xpath("//tei:reg[@resp= '#SHC #EMED']", namespaces={'tei': 'http://www.tei-c.org/ns/1.0'}):
+    print(word.text)

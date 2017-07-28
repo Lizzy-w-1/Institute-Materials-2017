@@ -4,8 +4,14 @@
     {% if resource_name == 'resource1' %}
         {% include 'resource1.html' %}
     {% endif %}
-    {% if resource_name == 'missing1' %}
-        {% include 'missing1.html' ignore missing %}
+    {% if resource_name == 'example1' %}
+        {% include 'example1.html' ignore missing %}
+    {% endif %}
+	{% if resource_name == 'test' %}
+        {% include 'myForster.txt' %}
+    {% endif %}
+	{% if resource_name == 'EMED' %}
+        {% include 'EMED-1Tam-2_1.xml' %}
     {% endif %}
     {% if resource_name == 'xhtml2' %}
         {% include ['xhtml.html', 'resource2.xhtml'] %}

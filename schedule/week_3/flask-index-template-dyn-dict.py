@@ -3,7 +3,7 @@ from flask import render_template
 app = Flask(__name__)
 values={'title': 'template index.html',
         'header': 'index.html',
-        'paragraph': 'This is index.html with dynamic contents in response to a request for / (ROOT) in flask-index-template-dyn-dict.py'
+        'paragraph': 'ABC This is index.html with dynamic contents in response to a request for / (ROOT) in flask-index-template-dyn-dict.py'
 }
 @app.route("/")
 def get_my_index():
